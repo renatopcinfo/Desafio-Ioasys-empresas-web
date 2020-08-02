@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import logo from '../../assets/logo-nav.png'
 import lupa from '../../assets/ic-search-copy.png'
 import close from '../../assets/ic-close.png'
