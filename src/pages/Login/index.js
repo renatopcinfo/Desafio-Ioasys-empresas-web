@@ -5,6 +5,7 @@ import * as S from './styles'
 
 import Logo from '../../assets/logo-home.png'
 import api from '../../services/api'
+import { TOKEN_KEY } from '../../services/auth'
 
 function Login() {
   const [formValues, setFormValues] = useState({})
@@ -20,6 +21,7 @@ function Login() {
   async function handleSubmit(event) {
     event.preventDefault()
     const result = await api.login(formValues)
+    localStorage.setItem(TOKEN_KEY, 'access-token')
     console.log(result)
     history.push('/home')
   }
