@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="293px" height="160px" viewBox="0 0 293 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>F54E9EDA-48EF-4405-B374-760861897E58</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="292.367811" height="160"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2_2_Resultado" transform="translate(-80.000000, -225.000000)">
+            <g id="Group-3" transform="translate(50.000000, 198.000000)">
+                <g id="img_e1_lista" transform="translate(30.629009, 27.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#7DC075" xlink:href="#path-1"></use>
+                    <text id="E1" mask="url(#mask-2)" font-family="Roboto-Bold, Roboto" font-size="77" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="101" y="109">E1</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
