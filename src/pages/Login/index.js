@@ -5,7 +5,7 @@ import * as S from './styles'
 
 import Logo from '../../assets/logo-home.png'
 import api from '../../services/api'
-import { TOKEN_KEY } from '../../services/auth'
+import { signin } from '../../services/auth'
 
 function Login() {
   const [formValues, setFormValues] = useState({})
@@ -20,10 +20,14 @@ function Login() {
 
   async function handleSubmit(event) {
     event.preventDefault()
-    const result = await api.login(formValues)
-    localStorage.setItem(TOKEN_KEY, 'access-token')
-    console.log(result)
-    history.push('/home')
+    try {
+      const result = await api.login(formValues)
+      signin('access-token')
+      console.log(result.data)
+      history.push('/home')
+    } catch (e) {
+      console.log('Usuário e/ou senha inválido(s)')
+    }
   }
 
   return (
