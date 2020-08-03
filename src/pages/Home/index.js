@@ -1,12 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 import logo from '../../assets/logo-nav.png'
 import lupa from '../../assets/ic-search-copy.png'
 import close from '../../assets/ic-close.png'
 import * as S from './styles'
 
+import { logout } from '../../services/auth'
+
 export default function Home(props) {
+  const handleLogin = () => {
+    logout()
+    history.push('/')
+  }
+
+  const history = useHistory()
+
   let busca = (
     <>
       <Link to="/" className="navbar-brand">
@@ -32,7 +42,7 @@ export default function Home(props) {
         />
         <div className="input-group-append">
           <span className="">
-            <img src={close} alt="fechar" onClick={props} />
+            <img src={close} alt="fechar" onClick={handleLogin} />
           </span>
         </div>
       </div>
